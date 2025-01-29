@@ -1,0 +1,846 @@
+body {
+    margin: 0;
+    padding: 0;
+    font: 400 18px/28px Inter, sans-serif ;
+    background-color: #EFEFF2;
+}
+.container {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+ 
+}
+@media (max-width: 1480px) {
+    .container {
+       width: 1200px;
+    }
+}
+@media (max-width: 1224px) {
+    .container {
+       width: 1000px;
+    }
+}
+ 
+@media (max-width: 426px)  {
+    .container {
+       width: 95vw;
+    }
+}
+/*======*/   
+
+h1, h2 {
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 70px;
+}
+@media (max-width: 1024px) {
+    h1, h2 {
+        font-size: 42px;
+    }
+}
+/* @media (max-width: 426px) {
+    h1, h2 {
+        font-size: 32px;
+    }
+} */
+@media screen and (max-width: 426px){
+    h1, h2 {
+        font-size: calc(100vw / 50); 
+        font-size: calc(10px + 2vw); 
+        line-height: 20px;
+    }    
+}
+
+a {
+    text-decoration: none;
+    color: #19191C;
+}
+ul{
+    list-style: none;
+}
+
+.header{
+    padding: 36px 0 0;
+    background-color: #EFEFF2;
+}
+@media screen and (max-width: 426px){
+    .header{
+        justify-content: center;
+        padding: 0;
+        margin-left: 0;
+        margin-top: 5px;
+    }
+    
+}
+.header__box{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+.nav__list{
+    display: flex;
+    list-style: none;
+    gap: 48px;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+}
+
+.btn-box{
+    display: flex;
+    gap: 48px;
+    align-items: center;
+}
+@media (max-width: 426px) {
+    .btn-box{
+        gap: 2px;
+        flex-direction: column;
+        margin-right: 12px;
+    }
+   }
+
+   /*ADAPTIVE*/
+
+.logo{
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+   }
+   @media (max-width: 426px) {
+    .logo{
+        font-weight: 400;
+        font-size: 18px;
+    }
+   }
+
+   /*ADAPTIVE*/
+
+.header__link{
+    color: #19191C;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+   }
+   /* Изменяем фон при наведении курсора */
+.header__link:hover {
+    color: #ef4343;
+}
+
+.header__btn{
+    background: #19191C;
+    color: #EFEFF2;
+    padding: 12px 37px;
+    font-weight: 700;
+}
+
+/* Стилизация ссылок при фокусе */
+.header__link:focus {
+    outline: 2px solid #007bff;
+}
+
+/* Активное состояние для кнопок или ссылок */
+.header__btn:active {
+    background-color: #0056b3;
+}
+
+@media screen and (max-width:426px) {
+    .headr__btn {
+        padding: 10px 15px;
+     }
+}
+
+/*=============*/
+
+.offer{
+     align-items: start;
+    padding: 0 0 230px;
+    margin-top: 219px;
+    margin-bottom: -30px;
+    background: url(../img/explore_man.png) 100% 100% no-repeat;
+    background-size: 70%;
+}
+
+@media (max-width: 1480px) {   
+    .offer{
+        background-size: 90%;
+        }      
+    }
+@media (max-width: 426px) {   
+    .offer{
+        flex-direction: column;
+        background: none;
+        margin-top: 29px;
+        padding-bottom: 40px;
+        }      
+    }
+
+/**ADAPTIVE**/
+
+.offer__holder{
+    width: 648px;
+   background: url(../img/Ellipse\ 20.png) 100% no-repeat; 
+   background-size: 97%;
+}
+@media (max-width: 426px) {   
+    .offer__holder{
+       width: 95%;
+        }      
+    }
+
+/**ADAPTIVE**/
+
+.offer__title{
+    margin: 0 0 18px;
+}
+.offer__description{
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 0 62px;
+}
+@media screen and (max-width: 426px) {   
+    .offer__description   {
+      margin: 10px 0;
+        }      
+    }
+
+/**ADAPTIVE**/
+.offer__link{
+    font-weight: 700;
+    color: #504DEE;
+}
+.offer__btn{
+    background: #504DEE;
+    color: #FBFBFC;
+    border: none;
+    padding: 16px 37px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.78px;
+    margin: 0 0 110px;
+}
+/* Изменение цвета фона кнопки при наведении курсора */
+.offer__btn:hover {
+    background-color: #ffa500;
+}
+
+/* Обводка кнопки при фокусе */
+.offer__btn:focus {
+    outline: 2px solid #007bff;
+}
+
+/* Стилизация кнопки, когда она активна */
+.offer__btn:active {
+    background-color: #ff4500;
+}
+
+/* Стилизация ссылок при наведении курсора */
+.offer__link:hover {
+    text-decoration: underline;
+}
+
+/* Обводка ссылок при фокусе */
+.offer__link:focus {
+    outline: 2px solid #007bff;
+    font-weight: 800;
+}
+
+@media screen and (max-width: 426px) {   
+
+    .offer__btn {
+      margin: 10px 0;
+        }      
+    }
+.offer__sale {
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 78px;
+    margin: 0;
+}
+.offer__time {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0;
+}
+.offer__list{
+    padding: 0;
+   margin: 0;
+   position: relative;
+   flex-grow: 1;  
+}
+@media screen and (max-width: 426px) {
+    .offer__list {
+        flex-wrap: wrap;
+    }    
+}
+.offer__item{
+    position: absolute;
+    border: 2px solid #19191C;
+    padding: 16px 36px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+}
+@media (max-width: 1480px) {
+    .offer__item {
+        position: static;
+        padding: 6px 16px;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        border: 1px dotted blue;
+    }
+    .offer__list {
+        display: flex;
+        gap: 2px;
+        padding-top: 30px;
+    }
+}
+/*ADAPTIVE*/
+
+
+
+.offer___marketer{    
+    top: 94px;
+    right: 90px;
+}
+.offer___illustrator {
+    top: 0;    
+    right: 300px;
+}
+.offer___animator{
+    top: 94px;
+    left: 88px;
+}
+.offer___programmer{
+    top: 275px;
+    left: -83px;
+}
+.offer___designer{
+    top: 420px;
+    left: -170px;
+}
+.offer___fotografer{
+    top: 593px;
+}
+
+/*================*/
+
+
+.learn, .footer {
+    background-color: black;
+    color: #FBFBFC;
+}
+
+@media (max-width: 1480px) {
+   
+.learn {
+    background-color: rgb(55, 54, 54);
+    color: #d7dacf;  
+    }
+    /* .learn__title {
+        font-size: 2.5rem;
+    } */
+  .learn__description-mediaQuery{
+    padding-right: 30px;
+  }
+}
+
+
+/*ADAPTIVE*/
+
+.learn__infoschool{
+    padding-top: 168px;
+    padding-bottom: 159px;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 926px) {
+    .learn__infoschool{
+        padding-top: 0;
+        padding-bottom: 0;
+        flex-direction: column;
+}
+}
+
+/**ADAPTIVE**/ 
+
+.learn__title-small{
+    margin-bottom: 17px;
+}
+.learn__description{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+/* Changing the background color when hovering over titles */
+/* Adding box shadow and scaling effect on hover */
+/* Changing the border color and adding gradient background on hover */
+.learn__title:hover {
+    border: 2px solid #007bff; /* Blue border */
+        color: white;
+    background: linear-gradient(45deg, #007bff, #ff4500); /* Gradient background */
+    transition: border 0.3s ease, background 0.3s ease, color 0.3s ease;
+}
+
+
+
+/* Adding an outline to titles when they are focused */
+.learn__title:focus {
+    outline: 2px solid #007bff;
+}
+
+/* Styling the description text on hover */
+.learn__description:hover {
+    text-decoration: underline;
+}
+
+
+/*=====================*/
+
+.discover{
+    flex-direction: column;
+    margin-top: 90px;
+    margin-bottom: 168px;     
+}
+
+.discover__info{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+.discover__info{
+    display: flex;
+    justify-content: space-between;
+}
+.discover__list{
+    display: flex;
+    flex: 1;
+    gap: 48px;
+    padding-left: 0;
+}
+@media screen and (max-width:426px) {
+    .discover__list {
+                gap: 5px;
+                flex-wrap: wrap;
+        }   
+}
+@media screen and (max-width:426px) {
+    .discover__list-li {
+            flex: 25%;
+        }   
+}
+.discover__btn-bold{
+    font-weight: 700;
+}
+.discover__arrow-bold{
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+/* Enhancing button hover effect */
+.discover__btn:hover {
+    background-color: #007bff; /* Blue background */
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Adding an outline for better focus */
+.discover__btn:focus {
+    outline: 2px solid #007bff;
+}
+
+/* Scaling effect on images when hovered */
+.discover__figure-img:hover {
+    transform: scale(1.05); /* Slightly enlarges the image */
+    transition: transform 0.3s ease;
+}
+
+/* Changing the border color on title hover */
+.discover__title:hover {
+    border: 2px solid #ff4500; /* Bright orange border */
+}
+
+@media (max-width: 1224px) {
+    .discover__info{
+        flex-wrap: wrap; 
+    }
+    .discover__arrow-bold{
+       width: 50%;   
+       margin: auto;
+       padding: 10px;  
+    }
+
+    .discover__list{
+    justify-content: center;
+    }
+}
+
+@media screen and (max-width:426px) {
+    .discover__arrow-bold{
+        display: none;
+    }
+}
+/**ADAPTIVE**/ 
+
+.discover-linie{
+    display: block;
+}
+.discover___cards {
+    display: flex;
+    gap: 20px;
+}
+.discover__figure{
+    position: relative;
+}
+
+@media (max-width: 1480px) {
+    .discover{
+        margin-bottom: 68px;     
+    }
+    .discover___cards {
+       flex-wrap: wrap
+    }
+    .discover__card-item{
+        width: 35%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .discover__figure{
+        width: 75%;
+        margin: auto;
+    }
+    .discover__figure-img{
+        object-fit: contain;
+        width: 100%;
+        height: auto;
+     }
+     .discover__card-title{
+        margin-top: 0;
+     }
+}
+@media (max-width: 1224px) {
+    .discover__smalFigure {
+        display: none; 
+    }
+    .circle1, .square2, .rectangle3, .delta3{
+        display: block;
+        top: 0;
+        left: 0;      
+    }
+}
+@media (max-width: 426px) {
+    .circle1, .square2, .rectangle3, .delta3{
+        display: none;
+      
+    }
+}
+
+/**ADAPTIVE**/
+
+.discover__smalFigure{
+    position: absolute;
+}
+.delta1{
+    top: 50px;
+    left: 42%;
+}
+.delta2{
+    top: 160px;
+    left: 42%;
+}
+.delta3{
+    bottom: 50px;
+    left: 42%;
+}
+.square1{
+    top: 56px;
+    left: 45%;
+}
+.square2{
+    top: 160px;
+    left: 42%;
+}
+.square3{
+    bottom: 56px;
+    left: 45%;
+}
+.circle1{   
+    top: 56px;
+    left: 104px;
+}
+.circle2{
+    top: 160px;
+    left: 47%;
+}
+.circle3{
+    bottom: 56px;
+    left: 104px;
+}
+.rectangle1{
+    top: 56px;
+    left: 40%;
+}
+.rectangle2{
+    bottom: 148px;
+    left: 45%;
+}
+.rectangle3{
+    bottom: 46px;
+    left: 40%;
+}
+.discover__card-title{
+    margin-bottom: 1px;
+}
+.discover__card-length {
+   margin-top: 9px;
+}
+/*=================*/
+.find-program{
+    background-color: #deefe4;
+}
+.find-program__container{
+    padding-top: 168px;
+}
+
+@media (max-width: 426px) {
+    .find-program__container{
+        flex-direction: column; 
+    }
+ 
+}
+
+/**ADAPTIVE**/
+
+.find-program__title{
+    margin-top: 0;
+}
+
+
+/*ADAPTIVE*/
+
+.find-program__block{
+    flex: 1;
+}
+.find-program__form{
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+/*===FORMA===*/
+
+.form__input{
+    border: none;
+    border-bottom: 1px solid #19191C;
+    width: 100%;
+    height: 82px;
+    background-color: #deefe4;
+    transition: 0.3s;    
+}
+.form__input:hover{
+      border-bottom: 1px solid #aec0b5;
+}
+.form__btn{
+    width: 144px;
+    padding: 16px 36px;
+    margin: 68px 0 68px;
+    border: none;
+    color: #EFEFF2;
+    background-color: #19191C;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.form__btn.focus,
+.form__btn:hover{
+    background-color: #c2e7cf;
+    color: #19191C;
+    font-size: 18px;
+}
+
+/* Adding an outline to form inputs when focused */
+.form__input:focus {
+    outline: 2px solid #007bff; /* Blue outline */
+}
+
+/* Changing the border and text color of labels on focus */
+.form__input:focus + .form__label {
+    color: #007bff; /* Blue text */
+    border-bottom: 1px solid #007bff; /* Blue border */
+}
+
+.form__grop{
+    position: relative;
+}
+
+
+@media (max-width: 426px) {
+  
+.form__grop{
+        width: 380px; 
+    }
+    .form__btn{
+        width: 380px;
+        font-size: 20px;
+      }
+ 
+}
+
+/**ADAPTIVE**/
+.form__label{
+    position: absolute;
+    bottom: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    transition: 0.3s;
+}
+.form__input:hover ~ .form__label,
+.form__input:not(:placeholder-shown) ~ .form__label {
+    top: -5px;
+    font-size: 13px;
+    color: #a9a8ec;
+}
+
+/*====footer=====*/
+.footer{
+    background-color: #19191C;
+    color: #EFEFF2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer__sitemap-logo{
+    display: flex;
+    flex-direction: column;
+}
+.footer__sitemap{
+    padding-top: 59px;
+}
+@media screen and (max-width: 426px) {
+    .sitemap {
+        display: none;
+    }    
+}
+.sitemap-mini {
+    display: none;
+}
+@media screen and (max-width: 426px) {
+    .sitemap-mini {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
+        gap: 20px;
+        }    
+}
+
+.sitemap__list{
+    color: #EFEFF2;
+    font-weight: 600;
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    padding-bottom: 28px;
+}
+.sitemap__list-link{
+    color: #EFEFF2;
+    list-style: none;
+}
+.sitemap__list-link{
+   font-weight: 400;
+    line-height: 28px;
+    font-size: 15px;
+}
+.sitemap__titile{
+    font-weight: 600;
+    margin: 0;
+ }
+ .logo-footer{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 68px;
+ }
+ .copyright {
+        display: flex;
+    align-items: center;
+ }
+ @media screen and (max-width: 426px) {
+    .copyright {
+        font-size: smaller;
+    }
+    
+ }
+ .copyright-dist, .policy{
+  
+    color: #6D6D77;
+    font-weight: 300;
+ }
+ .copyright-dist{
+    padding-left: 28px;
+  }
+.sitemap li{
+    padding-bottom: 10px;
+}
+
+/*===ADAPTIVE===*/
+
+
+/** burger menu **/
+.nav__burger{
+    display: none;
+}
+@media screen and (max-width: 426px) {
+    .nav__list{      
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        top: -600%;
+        transition: top 0.4s ease-in-out; 
+    }
+       .nav__item {
+        width: 100%;
+        padding: 51px 50px;
+        text-align: center;
+        z-index: 1;
+        background-color: #EFEFF2;
+        /* box-shadow: -1px -1px 2px 0 #c2c2c0; */
+    }
+        .nav__burger-img{
+        display: inline-block;
+        width: 35px;
+        height: 2px;
+        position: relative;
+        top: 50%;
+        left: -25px;
+        vertical-align: middle;
+        transform:translateY(-50%);       
+        background-color: #1e1a1a;
+    }
+    .nav__burger-img::before,
+    .nav__burger-img::after{
+        content: '';
+        position: absolute;
+        top: -8px;
+        width: 35px;
+        height: 2px;
+        background-color: #1e1a1a;
+    }
+    .nav__burger-img::after{
+        top: 8px;
+    }
+    .nav__burger:checked ~.nav__list  {
+        top: 100px;
+        left: 10px;
+        width: 100%;
+   }
+}
